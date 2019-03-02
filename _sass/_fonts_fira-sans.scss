@@ -1,0 +1,53 @@
+
+/**** FiraGO ****/
+
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 400;
+    font-style: normal;
+    src:
+      local('FiraGO Regular'),
+      url('/assets/fonts/FiraGO-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 400;
+    font-style: italic;
+    src:
+      local('FiraGO Italic'),
+      url('/assets/fonts/FiraGO-RegularItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 500;
+    font-style: normal;
+    src:
+      local('FiraGO Medium'),
+      url('/assets/fonts/FiraGO-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 500;
+    font-style: italic;
+    src:
+      local('FiraGO Medium Italic'),
+      url('/assets/fonts/FiraGO-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 700;
+    font-style: normal;
+    src:
+      local('FiraGO Bold'),
+      url('/assets/fonts/FiraGO-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 700;
+    font-style: italic;
+    src:
+      local('FiraGO Bold Italic'),
+      url('/assets/fonts/FiraGO-BoldItalic.woff2') format('woff2');
+}
