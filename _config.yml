@@ -1,0 +1,12 @@
+title: Extended Directories Guide for Software Developers
+email: simon@ochsenreither.de
+description: >
+baseurl: ""
+url: ""
+plugins:
+  - jekyll-redirect-from
+future: false
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .vendor/
