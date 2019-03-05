@@ -3,3 +3,31 @@
 
 @import "normalize";
 @import "fonts";
+
+#grid-platform {
+	display: grid;
+}
+
+#linux {
+	grid-row: 1;
+	background: url("assets/img/sigmar-schnur-1244971-unsplash.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#windows {
+	grid-row: 1;
+	background-image: url("assets/img/majkl-velner-781530-unsplash.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#macos {
+	grid-row: 1;
+	background-image: url("assets/img/chris-fuller-481199-unsplash.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#redox {
+	grid-row: 1;
+	background-image: url("assets/img/isis-franca-641217-unsplash.jpg") no-repeat center center;
+	background-size: cover;
+}
