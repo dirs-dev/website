@@ -1,6 +1,53 @@
 
 /**** FiraGO ****/
-
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 100;
+    font-style: normal;
+    src:
+      local('FiraGO Hair'),
+      url('/assets/fonts/FiraGO-Hair.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 100;
+    font-style: italic;
+    src:
+      local('FiraGO HairItalic'),
+      url('/assets/fonts/FiraGO-HairItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 200;
+    font-style: normal;
+    src:
+      local('FiraGO Thin'),
+      url('/assets/fonts/FiraGO-Thin.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 200;
+    font-style: italic;
+    src:
+      local('FiraGO ThinItalic'),
+      url('/assets/fonts/FiraGO-ThinItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 300;
+    font-style: normal;
+    src:
+      local('FiraGO Book'),
+      url('/assets/fonts/FiraGO-Book.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraGO';
+    font-weight: 300;
+    font-style: italic;
+    src:
+      local('FiraGO BookItalic'),
+      url('/assets/fonts/FiraGO-BookItalic.woff2') format('woff2');
+}
 @font-face {
     font-family: 'FiraGO';
     font-weight: 400;
