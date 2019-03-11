@@ -4,17 +4,19 @@ layout: default
 
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    <main id="main">
-      <section id="grid-platform">
-        <div id="linux"></div>
-        <div id="windows"></div>
-        <div id="macos"></div>
-        <div id="redox"></div>
-      </section>
-      {{ content }}
-    </main>
-  </body>
+	{% include head.html %}
+	<body>
+		{% include header.html %}
+		<section id="intro">
+			<h1>A Practical Guide to Standard Directories for Software Developers</h1>
+		</section>
+		<section id="guide">
+		</section>
+		<div id="linux" class="platform"><p>Linux</p></div>
+		<div id="windows" class="platform"><p>Windows</p></div>
+		<div id="macos" class="platform"><p>macOS</p></div>
+		<div id="redox" class="platform"><p>Redox</p></div>
+		<section id="docs">
+		</section>
+	</body>
 </html>

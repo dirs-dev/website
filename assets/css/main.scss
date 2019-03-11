@@ -4,30 +4,172 @@
 @import "normalize";
 @import "fonts";
 
-#grid-platform {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "FiraGO";
+	font-size: 1.5rem;
+}
+
+body {
+	overflow: hidden;
+	overflow-y: scroll;
+	background-image: url(../img/backtop.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center -800px;
+	background-repeat: no-repeat;
 	display: grid;
+	grid-template-rows: 80px 800px 800px 400px 1400px;
+	grid-template-columns: repeat(12, calc(100% / 12)) ;
+	grid-template-areas: "nav   nav   nav   nav   nav   nav   nav   nav   nav   nav   about about"
+	                     "intro intro intro intro intro intro intro intro intro intro intro intro"
+	                     "guide guide guide guide guide guide guide guide guide guide guide guide"
+	                     "linux linux linux win   win   win   macos macos macos redox redox redox"
+	                     "docs  docs  docs  docs  docs  docs  docs  docs  docs  docs  docs  docs";
+}
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 40px;
+}
+
+#nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	grid-area: nav;
+	font-size: 1.5rem;
+	font-weight: 200;
+	color: #FFFFFF;
+}
+
+#about {
+	z-index: 0;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	grid-area: about;
+	font-size: 1.5rem;
+	font-weight: 200;
+	color: #FFFFFF;
+	background-color: #102B3F;
+}
+
+#about::before {
+  z-index: -1;
+	content: "";
+	display: block;
+	position: absolute;
+	left: -30px;
+	top: 0;
+	height: 100%;
+	width: 60px;
+	background-color: #102B3F;
+	transform: skewX(345deg);
+	position: absolute;
+}
+
+#intro {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	grid-area: intro;
+}
+
+h1 {
+	font-weight: 500;
+	z-index: 0;
+	color: #FFFFFF;
+	padding: 20px;
+	background-color: #E94F37;
+	top: 200px;
+	position: relative;
+	//text-shadow: 0px 0px 5px #000000;
+	text-shadow: 0px 0px 5px #330000;
+}
+
+h1::after {
+  z-index: -1;
+	content: "";
+	display: block;
+	position: absolute;
+	right: -30px;
+	top: 0;
+	height: 100%;
+	width: 60px;
+	background-color: #E94F37;
+	transform: skewX(345deg);
+}
+
+.platform {
+	position: relative;
+	height: 400px;
+	background-color: #333333;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	transition: background-color 0.5s;
+	text-shadow: 0px 0px 5px #333333;
+}
+
+.platform:hover, .platform:active {
+	background-color: transparent;
+	background-blend-mode: multiply;
+}
+
+.platform > p {
+	color: #FFFFFF;
+	padding: 20px;
+	font-size: 2rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: background-color 0.5s;
+}
+
+.platform:hover > p, .platform:active > p {
+	background-color: #E94F37;
+	text-shadow: 0px 0px 5px #330000;
 }
 
 #linux {
-	grid-row: 1;
-	background: url("assets/img/sigmar-schnur-1244971-unsplash.jpg") no-repeat center center;
-	background-size: cover;
+	grid-area: linux;
+	background-image: url(../img/sigmar-schnur-1244971-unsplash.jpg);
 }
 
 #windows {
-	grid-row: 1;
-	background-image: url("assets/img/majkl-velner-781530-unsplash.jpg") no-repeat center center;
-	background-size: cover;
+	grid-area: win;
+	background-image: url(../img/majkl-velner-781530-unsplash.jpg);
 }
 
 #macos {
-	grid-row: 1;
-	background-image: url("assets/img/chris-fuller-481199-unsplash.jpg") no-repeat center center;
-	background-size: cover;
+	grid-area: macos;
+	background-image: url(../img/chris-fuller-481199-unsplash.jpg);
 }
 
 #redox {
-	grid-row: 1;
-	background-image: url("assets/img/isis-franca-641217-unsplash.jpg") no-repeat center center;
-	background-size: cover;
+	grid-area: redox;
+	background-image: url(../img/isis-franca-641217-unsplash.jpg);
+}
+
+#guide {
+	grid-area: guide;
+	background-color: #FFFFFF;
+}
+
+#docs {
+	grid-area: docs;
+	background-color: #2374AB;
 }
