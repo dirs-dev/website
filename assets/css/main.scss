@@ -40,7 +40,7 @@ nav ul li {
 	margin-right: 30px;
 }
 
-#about {
+.about {
 	line-height: 80px;
 	z-index: 0;
 	display: flex;
@@ -55,11 +55,11 @@ nav ul li {
 
 }
 
-#about ul {
+.about ul {
 	height: 100%;
 }
 
-#about ul::before {
+.about ul::before {
     z-index: -1;
 	content: "";
 	display: block;
@@ -72,7 +72,7 @@ nav ul li {
 	transform: skewX(345deg);
 }
 
-#intro {
+.intro {
 	display: flex;
 	flex-direction: row;
 	align-items: end;
@@ -153,32 +153,32 @@ p+p {
 	text-shadow: 0px 0px 5px #330000;
 }
 
-#linux {
+.linux {
 	grid-area: linux;
 	background-image: url(../img/sigmar-schnur-1244971-unsplash.jpg);
 }
 
-#windows {
+.windows {
 	grid-area: win;
 	background-image: url(../img/majkl-velner-781530-unsplash.jpg);
 }
 
-#macos {
+.macos {
 	grid-area: macos;
 	background-image: url(../img/chris-fuller-481199-unsplash.jpg);
 }
 
-#redox {
+.redox {
 	grid-area: redox;
 	background-image: url(../img/isis-franca-641217-unsplash.jpg);
 }
 
-#guide {
+.guide {
 	grid-area: guide;
 	background-color: #FFFFFF;
 }
 
-#docs {
+.docs {
 	grid-area: docs;
 	background-color: #2374AB;
 }
