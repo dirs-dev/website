@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="en">
 	{% include head.html %}
@@ -13,15 +9,22 @@ layout: default
 			</ul>
 		</nav>
 		<section class="intro">
-			<h1>A&nbsp;Practical&nbsp;Guide to&nbsp;Standard&nbsp;Directories for&nbsp;Software&nbsp;Developers</h1>
+			<h1 class="title">A&nbsp;Practical&nbsp;Guide to&nbsp;Standard&nbsp;Directories for&nbsp;Software&nbsp;Developers</h1>
 		</section>
 		<section class="guide">
 			<article>
-				<h2>Applications should be good citizens on the platforms they run on.</h2>
+				<h2 class="claim">Applications should be good citizens on the platforms they run on:</h2>
 				<p>This means following the operating systems' rules regarding the location of configuration, cache files and other application data.</p>
-				<p>...</p>
-				<p>...</p>
-				<p>...</p>
+				<p>This in turn allows vastly simplified management of our data:</p>
+				<ul>
+					<li>Easily moving between different machines, carrying your configuration with you.</li>
+					<li>Backing up all crucial files, without the needless copying of caches.</li>
+					<li>Evicting caches with the assurance that no critical data is lost.</li>
+				</ul>
+				<br/>
+				<p>But as each operating system invented its own set of rules, this is easier said than done.</p>
+				<br/>
+				<p>This website provides resources to developers that helps them write applications that adhere to the standards of the operating system they are running on.</p>
 			</article>
 		</section>
 		<div class="platform linux"><p>Linux</p></div>
