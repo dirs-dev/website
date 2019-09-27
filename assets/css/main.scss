@@ -23,12 +23,13 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-rows: 60px 300px auto 400px auto;
+  grid-template-rows: 60px 300px auto 400px auto auto;
   grid-template-columns: repeat(12, calc(100% / 12)) ;
   grid-template-areas: "nav   nav   nav   nav   nav   nav   nav   nav   nav   nav   nav   nav"
   "intro intro intro intro intro intro intro intro intro intro intro intro"
   "guide guide guide guide guide guide guide guide guide guide guide guide"
   "linux linux linux win   win   win   macos macos macos redox redox redox"
+  "detai detai detai detai detai detai detai detai detai detai detai detai"
   "docs  docs  docs  docs  docs  docs  docs  docs  docs  docs  docs  docs";
 }
 
@@ -124,7 +125,7 @@ nav ul li {
   right: -30px;
   top: 0;
   height: 100%;
-  width: 2000px;
+  width: 800px;
   background-color: #E94F37;
   transform: skewX(345deg);
 }
@@ -152,13 +153,14 @@ nav ul li {
   text-shadow: 0px 0px 5px #333333;
 }
 
-.platform:hover, .platform:active {
+.platform:hover, .platform:active, .platform--active {
   background-color: transparent;
   background-blend-mode: multiply;
 }
 
 .platform > p {
   color: #FFFFFF;
+  cursor: default;
   padding: 20px;
   font-size: 2rem;
   position: absolute;
@@ -168,29 +170,47 @@ nav ul li {
   transition: background-color 0.5s;
 }
 
-.platform:hover > p, .platform:active > p {
+.platform:hover > p, .platform:active > p, .platform--active > p {
   background-color: #E94F37;
   text-shadow: 0px 0px 5px #330000;
 }
 
-.linux {
+.platform--active > p {
+  border: #FFFFFF solid 4px;
+  padding: 18px;
+}
+
+.platform--linux {
   grid-area: linux;
   background-image: url(../img/info-linux.jpg);
 }
 
-.windows {
+.platform--windows {
   grid-area: win;
   background-image: url(../img/info-windows.jpg);
 }
 
-.macos {
+.platform--macos {
   grid-area: macos;
   background-image: url(../img/info-macos.jpg);
 }
 
-.redox {
+.platform--redox {
   grid-area: redox;
   background-image: url(../img/info-redox.jpg);
+}
+
+.detail--hidden {
+  display: none;
+}
+
+.details {
+  grid-area: detai;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.detail--active {
 }
 
 .docs {
