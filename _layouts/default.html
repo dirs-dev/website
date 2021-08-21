@@ -4,45 +4,10 @@
   <body>
   <nav class="about">
     <ul>
-      <li>Contribute</li>
+      <li><a href="https://github.com/dirs-dev/website">Contribute</a></li>
       <li>About</li>
     </ul>
   </nav>
-  <section class="intro">
-    <h1 class="title">A&nbsp;Practical&nbsp;Guide to&nbsp;Standard&nbsp;Directories for&nbsp;Software&nbsp;Developers</h1>
-  </section>
-  <section class="guide">
-    <article>
-      <h2 class="claim">Applications should be good citizens on the platforms they run on:</h2>
-      <p>This means that applications should follow the operating systems' rules regarding the location of configuration, cache files and other application data.</p>
-      <p>This in turn allows vastly simplified management of our data:</p>
-      <ul>
-        <li>Easily moving between different machines, carrying your configuration with you.</li>
-        <li>Backing up all crucial files, without the needless copying of caches.</li>
-        <li>Evicting caches with the assurance that no critical data is lost.</li>
-      </ul>
-      <br/>
-      <p>But as each operating system invented its own set of rules, this is easier said than done.</p>
-      <br/>
-      <p>This website provides resources intended to encourage and help applications to adhere to the standards of the operating system they are running on.</p>
-    </article>
-  </section>
-  <div class="platform platform--linux" onclick="showDetail('linux')"><p>Linux</p></div>
-  <div class="platform platform--windows" onclick="showDetail('windows')"><p>Windows</p></div>
-  <div class="platform platform--macos" onclick="showDetail('macos')"><p>macOS</p></div>
-  <div class="platform platform--redox" onclick="showDetail('redox')"><p>Redox</p></div>
-  <section class="details">
-    <div class="detail--active"></div>
-    <div class="detail detail--linux">LINUX</div>
-    <div class="detail detail--windows">WINDOWS</div>
-    <div class="detail detail--macos">MACOS</div>
-    <div class="detail detail--redox">REDOX</div>
-  </section>
-  <section class="docs">
-    <article>
-      <h2>Libraries</h2>
-      <p>bla bla bla</p>
-    </article>
-  </section>
+  {{ content }}
   </body>
 </html>

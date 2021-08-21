@@ -3,12 +3,12 @@
 function showDetail(tabClassName) {
     document.querySelectorAll('.platform').forEach(platform => platform.classList.remove('platform--active'));
     document.querySelector('.platform--' + tabClassName).classList.add('platform--active')
-    const activeTab = document.querySelector('.detail--active');
-    activeTab.textContent = document.querySelector('.detail--' + tabClassName).textContent;
+    hideAllDetails();
+    document.querySelector('.detail--' + tabClassName).hidden = false;
 }
 
 function hideAllDetails() {
-    document.querySelectorAll('.detail').forEach(platform => platform.classList.add('detail--hidden'));
+    document.querySelectorAll('.detail').forEach(platform => platform.hidden = true);
 }
 
 hideAllDetails();

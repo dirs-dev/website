@@ -9,4 +9,5 @@ future: false
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .idea/
   - .vendor/

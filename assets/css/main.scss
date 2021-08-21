@@ -78,7 +78,6 @@ nav ul li {
   font-size: 1.25rem;
   font-weight: 200;
   color: #FFFFFF;
-
 }
 
 .about ul {
@@ -96,6 +95,11 @@ nav ul li {
   width: 280px;
   background-color: #102B3F;
   transform: skewX(345deg);
+}
+
+.about a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .intro {
@@ -200,20 +204,21 @@ nav ul li {
   background-image: url(../img/info-redox.jpg);
 }
 
-.detail--hidden {
-  display: none;
-}
-
 .details {
   grid-area: detai;
   background-color: #FFFFFF;
-  padding: 20px;
 }
 
-.detail--active {
+.detail {
+  padding: 20px;
 }
 
 .docs {
   grid-area: docs;
   background-color: #2374AB;
+  color: #FFFFFF;
+}
+
+.docs a {
+  color: #FFFFFF;
 }
