@@ -38,6 +38,11 @@ article {
   max-width: 800px;
 }
 
+button {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
 
 h1 {
   font-size: 1.25rem;
@@ -162,9 +167,10 @@ nav ul li {
   background-blend-mode: multiply;
 }
 
-.platform > p {
+.platform > span {
   color: #FFFFFF;
   cursor: default;
+  display: block;
   padding: 20px;
   font-size: 2rem;
   position: absolute;
@@ -174,12 +180,12 @@ nav ul li {
   transition: background-color 0.5s;
 }
 
-.platform:hover > p, .platform:active > p, .platform--active > p {
+.platform:hover > span, .platform:focus > span, .platform:active > span, .platform--active > span {
   background-color: #E94F37;
   text-shadow: 0px 0px 5px #330000;
 }
 
-.platform--active > p {
+.platform--active > span {
   border: #FFFFFF solid 4px;
   padding: 18px;
 }

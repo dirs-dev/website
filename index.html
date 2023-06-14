@@ -21,10 +21,10 @@ layout: default
       <p>This website provides resources intended to encourage and help applications to adhere to the standards of the operating system they are running on.</p>
     </article>
   </section>
-  <div class="platform platform--linux" onclick="showDetail('linux')"><p>Linux</p></div>
-  <div class="platform platform--windows" onclick="showDetail('windows')"><p>Windows</p></div>
-  <div class="platform platform--macos" onclick="showDetail('macos')"><p>macOS</p></div>
-  <div class="platform platform--redox" onclick="showDetail('redox')"><p>Redox</p></div>
+  <button class="platform platform--linux" onclick="showDetail('linux')"><span>Linux</span></button>
+  <button class="platform platform--windows" onclick="showDetail('windows')"><span>Windows</span></button>
+  <button class="platform platform--macos" onclick="showDetail('macos')"><span>macOS</span></button>
+  <button class="platform platform--redox" onclick="showDetail('redox')"><span>Redox</span></button>
   <section class="details">
     <div class="detail--active"></div>
     <div class="detail detail--linux">{% include index_linux.html %}</div>
